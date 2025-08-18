@@ -1,0 +1,166 @@
+{
+  "name": "preview-readme-markdown",
+  "displayName": "Preview README & Markdown",
+  "description": "Enhanced preview functionality for README and .md files with multiple preview modes and export capabilities",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Formatters"
+  ],
+  "keywords": [
+    "markdown",
+    "readme",
+    "preview",
+    "html",
+    "pdf",
+    "export",
+    "vscode",
+    "cursor"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown",
+    "onCommand:preview-readme-markdown.previewMarkdown",
+    "onCommand:preview-readme-markdown.previewSideBySide",
+    "onCommand:preview-readme-markdown.previewInNewTab"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "preview-readme-markdown.previewMarkdown",
+        "title": "Preview Markdown",
+        "category": "Markdown"
+      },
+      {
+        "command": "preview-readme-markdown.previewSideBySide",
+        "title": "Preview Markdown Side by Side",
+        "category": "Markdown"
+      },
+      {
+        "command": "preview-readme-markdown.previewInNewTab",
+        "title": "Preview Markdown in New Tab",
+        "category": "Markdown"
+      },
+      {
+        "command": "preview-readme-markdown.exportToHTML",
+        "title": "Export Markdown to HTML",
+        "category": "Markdown"
+      },
+      {
+        "command": "preview-readme-markdown.exportToPDF",
+        "title": "Export Markdown to PDF",
+        "category": "Markdown"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .md || resourceExtname == .markdown || resourceFilename == README || resourceFilename == README.md",
+          "command": "preview-readme-markdown.previewMarkdown",
+          "group": "navigation"
+        },
+        {
+          "when": "resourceExtname == .md || resourceExtname == .markdown || resourceFilename == README || resourceFilename == README.md",
+          "command": "preview-readme-markdown.previewSideBySide",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "when": "resourceExtname == .md || resourceExtname == .markdown || resourceFilename == README || resourceFilename == README.md",
+          "command": "preview-readme-markdown.previewMarkdown",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "resourceExtname == .md || resourceExtname == .markdown || resourceFilename == README || resourceFilename == README.md",
+          "command": "preview-readme-markdown.previewSideBySide",
+          "group": "markdown"
+        },
+        {
+          "when": "resourceExtname == .md || resourceExtname == .markdown || resourceFilename == README || resourceFilename == README.md",
+          "command": "preview-readme-markdown.exportToHTML",
+          "group": "markdown"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "preview-readme-markdown.previewMarkdown",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "editorLangId == markdown"
+      },
+      {
+        "command": "preview-readme-markdown.previewSideBySide",
+        "key": "ctrl+shift+p",
+        "mac": "cmd+shift+p",
+        "when": "editorLangId == markdown"
+      }
+    ],
+    "configuration": {
+      "title": "Preview README & Markdown",
+      "properties": {
+        "preview-readme-markdown.autoPreview": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically open preview when opening markdown files"
+        },
+        "preview-readme-markdown.defaultPreviewMode": {
+          "type": "string",
+          "enum": ["side-by-side", "new-tab", "inline"],
+          "default": "side-by-side",
+          "description": "Default preview mode when opening markdown files"
+        },
+        "preview-readme-markdown.theme": {
+          "type": "string",
+          "enum": ["auto", "light", "dark"],
+          "default": "auto",
+          "description": "Preview theme (auto follows editor theme)"
+        },
+        "preview-readme-markdown.enableMath": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable math equation rendering (KaTeX)"
+        },
+        "preview-readme-markdown.enableMermaid": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Mermaid diagram rendering"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build": "npm run compile && vsce package",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4",
+    "vsce": "^2.15.0"
+  },
+  "dependencies": {
+    "marked": "^5.0.0",
+    "katex": "^0.16.0",
+    "mermaid": "^10.0.0"
+  },
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/preview-readme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/preview-readme/issues"
+  },
+  "homepage": "https://github.com/yourusername/preview-readme#readme"
+}
