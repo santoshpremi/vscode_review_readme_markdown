@@ -1,9 +1,5 @@
 # Preview README & Markdown Extension
 
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension%20Marketplace-blue?logo=visual-studio-code)](https://marketplace.visualstudio.com/)
-[![Cursor](https://img.shields.io/badge/Cursor-Extension%20Marketplace-blue?logo=cursor)](https://cursor.sh/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 A **universal extension** that provides enhanced preview functionality for README and .md files across **multiple code editors**.
 
 ## 🚀 **Quick Start**
@@ -214,30 +210,4 @@ npm test
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📚 **Documentation**
 
-- [Installation Guide](INSTALLATION.md) - Detailed installation for each editor
-- [Editor Comparison](EDITOR_COMPARISON.md) - Feature comparison across editors
-- [Project Structure](PROJECT_STRUCTURE.md) - Complete project organization
-- [Contributing Guide](CONTRIBUTING.md) - How to contribute to the project
-
----
-
-**Ready to preview markdown across all your favorite editors? Install the extension for your editor and start enjoying consistent markdown preview functionality everywhere!** 🎉
-
-## 📞 **Support & Community**
-
-- 📧 **Email**: support@multieditor.dev
-- 💬 **Discord**: [Join our community](https://discord.gg/multieditor)
-- 🐛 **Issues**: [Report bugs](https://github.com/multieditor/preview-readme/issues)
-- 💡 **Feature Requests**: [Request features](https://github.com/multieditor/preview-readme/issues/new)
-- 📖 **Documentation**: [Read the docs](https://multieditor.dev/docs)
-
-## 🔗 **Links**
-
-- **VS Code Marketplace**: [Preview README & Markdown](https://marketplace.visualstudio.com/)
-- **Cursor Marketplace**: [Preview README & Markdown](https://cursor.sh/)
-- **GitHub Repository**: [multieditor/preview-readme](https://github.com/multieditor/preview-readme)
-- **Issues**: [GitHub Issues](https://github.com/multieditor/preview-readme/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/multieditor/preview-readme/discussions)
-- **Releases**: [GitHub Releases](https://github.com/multieditor/preview-readme/releases)
