@@ -2,7 +2,7 @@
 
 A **universal extension** that provides enhanced preview functionality for README and .md files across **multiple code editors**.
 
-## 🚀 **Quick Start**
+##    **Quick Start**
 
 ### **VS Code / Cursor**
 
@@ -21,42 +21,42 @@ A **universal extension** that provides enhanced preview functionality for READM
 - **Command Palette**: `Ctrl+Shift+P` → "Preview Markdown"
 - **Context Menu**: Right-click on `.md` files → "Preview Markdown"
 
-## 🌟 **Supported Editors**
+##  **Supported Editors**
 
 | Editor            | Status          | Installation          | Features     |
 | ----------------- | --------------- | --------------------- | ------------ |
-| **VS Code**       | ✅ Full Support | Extension Marketplace | All features |
-| **Cursor**        | ✅ Full Support | Extension Marketplace | All features |
-| **IntelliJ IDEA** | 🔄 In Progress  | Plugin Repository     | Coming Soon  |
-| **Sublime Text**  | 🔄 In Progress  | Package Control       | Coming Soon  |
-| **Vim/Neovim**    | 🔄 In Progress  | Plugin Manager        | Coming Soon  |
-| **Atom**          | 🔄 In Progress  | Package Manager       | Coming Soon  |
+| **VS Code**       |    Full Support | Extension Marketplace | All features |
+| **Cursor**        |    Full Support | Extension Marketplace | All features |
+| **IntelliJ IDEA** |    In Progress  | Plugin Repository     | Coming Soon  |
+| **Sublime Text**  |    In Progress  | Package Control       | Coming Soon  |
+| **Vim/Neovim**    |    In Progress  | Plugin Manager        | Coming Soon  |
+| **Atom**          |    In Progress  | Package Manager       | Coming Soon  |
 
-## 🎯 **Features (Currently Working)**
+##    **Features (Currently Working)**
 
 ### **Core Preview Functionality**
 
 - **Multiple Preview Modes**:
-  - Side-by-side preview ✅
-  - New tab preview ✅
-  - Inline preview ✅
-- **Smart File Detection**: Works with `.md`, `.markdown`, and any file named `README` ✅
-- **Real-time Updates**: Preview updates as you type ✅
-- **Theme Support**: Light, dark, and auto themes ✅
+  - Side-by-side preview   
+  - New tab preview   
+  - Inline preview   
+- **Smart File Detection**: Works with `.md`, `.markdown`, and any file named `README`   
+- **Real-time Updates**: Preview updates as you type   
+- **Theme Support**: Light, dark, and auto themes   
 
 ### **Export Capabilities**
 
-- **HTML Export**: Generate standalone HTML files ✅
-- **PDF Export**: Export via HTML with browser print-to-PDF ✅
-- **Custom Styling**: Consistent theming across exports ✅
+- **HTML Export**: Generate standalone HTML files   
+- **PDF Export**: Export via HTML with browser print-to-PDF   
+- **Custom Styling**: Consistent theming across exports   
 
 ### **Advanced Features**
 
-- **Auto-Preview**: Optional automatic preview on file open ✅
-- **Cross-Editor Sync**: Consistent experience across all editors ✅
-- **Multiple Access Methods**: Context menu, keyboard shortcuts, command palette ✅
+- **Auto-Preview**: Optional automatic preview on file open   
+- **Cross-Editor Sync**: Consistent experience across all editors   
+- **Multiple Access Methods**: Context menu, keyboard shortcuts, command palette   
 
-## 📦 **Installation**
+##    **Installation**
 
 ### **VS Code / Cursor (Recommended)**
 
@@ -82,7 +82,7 @@ A **universal extension** that provides enhanced preview functionality for READM
    ```
 4. Press `F5` to run in Extension Development Host
 
-## 🎯 **Usage**
+##    **Usage**
 
 ### **Method 1: Context Menu**
 
@@ -160,7 +160,7 @@ preview-readme/
 └── LICENSE                # MIT license
 ```
 
-## 🤝 **Contributing**
+##    **Contributing**
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -189,22 +189,22 @@ npm run compile
 npm test
 ```
 
-## 📊 **Status & Roadmap**
+##    **Status & Roadmap**
 
 ### **Current Status**
 
-- ✅ VS Code/Cursor: Full implementation
-- 🔄 IntelliJ IDEA: Plugin structure in progress
-- 🔄 Sublime Text: Package configuration in progress
-- 🔄 Vim/Neovim: Plugin implementation in progress
-- 🔄 Atom: Package configuration in progress
+-    VS Code/Cursor: Full implementation
+-    IntelliJ IDEA: Plugin structure in progress
+-    Sublime Text: Package configuration in progress
+-    Vim/Neovim: Plugin implementation in progress
+-    Atom: Package configuration in progress
 
 ### **Planned Features**
 
-- 🔄 Enhanced math rendering
-- 🔄 Mermaid diagram support
-- 🔄 Custom CSS themes
-- 🔄 Plugin marketplace submissions
+-    Enhanced math rendering
+-    Mermaid diagram support
+-    Custom CSS themes
+-    Plugin marketplace submissions
 
 ## 📄 **License**
 
